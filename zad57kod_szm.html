@@ -1,0 +1,45 @@
+<html>
+<!-Filip Szmigielsk!->
+<body>
+<textarea cols="78"rows="35">
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Zadanie 57</title>
+</head>
+<body>
+
+<script>
+
+var licznik_szm=0;
+
+for(var i_szm=26;i_szm<=41;i_szm++)
+{
+ var pierw2_szm=Math.sqrt(i_szm);
+ var pierw4_szm=Math.sqrt(pierw2_szm);
+
+ document.write(
+ "i="+i_szm+
+ " pierw_2("+i_szm+")="+pierw2_szm.toFixed(2)+
+ " pierw_4("+i_szm+")="+pierw4_szm.toFixed(2)+
+ "<br>"
+ );
+
+ licznik_szm++;
+
+ if(licznik_szm%3==0)
+ {
+  confirm("Kliknij OK");
+ }
+}
+
+</script>
+
+</body>
+</html>
+
+</textarea>
+</body>
+</html>

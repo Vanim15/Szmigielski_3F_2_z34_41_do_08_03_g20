@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Zadanie 47</title>
+</head>
+<body>
+
+<script>
+
+do
+{
+ var a_szm=parseFloat(prompt("Bok a"));
+ var b_szm=parseFloat(prompt("Bok b"));
+ var c_szm=parseFloat(prompt("Bok c"));
+
+}
+while(!(a_szm>0 &&
+        b_szm>0 &&
+        c_szm>0 &&
+        a_szm+b_szm>c_szm &&
+        a_szm+c_szm>b_szm &&
+        b_szm+c_szm>a_szm));
+
+document.write("Podane boki tworzą trójkąt.");
+
+</script>
+
+</body>
+</html>

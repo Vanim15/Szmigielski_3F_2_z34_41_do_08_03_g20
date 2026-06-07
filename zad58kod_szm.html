@@ -1,0 +1,59 @@
+<html>
+<!-Filip Szmigielsk!->
+<body>
+<textarea cols="78"rows="35">
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Zadanie 58</title>
+</head>
+<body>
+
+<script>
+
+var a_szm=parseInt(prompt("Podaj pierwszą liczbę"));
+var b_szm=parseInt(prompt("Podaj drugą liczbę"));
+
+if(a_szm<b_szm)
+{
+ document.write("<div style='color:green;font-size:40px;'>");
+
+ for(var i_szm=a_szm+1;i_szm<b_szm;i_szm++)
+ {
+  if(i_szm%2!=0)
+  {
+   document.write(i_szm+"<br>");
+  }
+ }
+
+ document.write("</div>");
+}
+else if(a_szm>b_szm)
+{
+ document.write("<div style='color:blue;font-size:20px;'>");
+
+ for(var i_szm=a_szm-1;i_szm>b_szm;i_szm--)
+ {
+  if(i_szm%2!=0)
+  {
+   document.write(i_szm+"<br>");
+  }
+ }
+
+ document.write("</div>");
+}
+else
+{
+ confirm("Podane liczby są równe - brak obliczeń");
+}
+
+</script>
+
+</body>
+</html>
+
+</textarea>
+</body>
+</html>

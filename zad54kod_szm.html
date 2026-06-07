@@ -1,0 +1,53 @@
+<html>
+<!-Filip Szmigielsk!->
+<body>
+<textarea cols="78"rows="35">
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Zadanie 54</title>
+</head>
+<body>
+
+<script>
+
+var imie_szm=prompt("Podaj imię");
+var nazwisko_szm=prompt("Podaj nazwisko");
+
+var a_szm=(nazwisko_szm.length%4)+5;
+var b_szm=(imie_szm.length%6)+20;
+
+for(var i_szm=1;i_szm<=b_szm;i_szm++)
+{
+ document.write("*");
+}
+
+document.write("<br>");
+
+for(var i_szm=1;i_szm<=a_szm-2;i_szm++)
+{
+ document.write("*");
+
+ for(var k_szm=1;k_szm<=b_szm-2;k_szm++)
+ {
+  document.write("&nbsp;");
+ }
+
+ document.write("*<br>");
+}
+
+for(var i_szm=1;i_szm<=b_szm;i_szm++)
+{
+ document.write("*");
+}
+
+</script>
+
+</body>
+</html>
+
+</textarea>
+</body>
+</html>

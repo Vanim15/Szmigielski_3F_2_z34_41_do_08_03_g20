@@ -1,0 +1,44 @@
+<html>
+<!-Filip Szmigielsk!->
+<body>
+<textarea cols="78"rows="35">
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Zadanie 59</title>
+</head>
+<body>
+
+<div style="color:black;font-size:18px;">
+
+<script>
+
+var R_szm=parseInt(prompt("Podaj promień R"));
+var N_szm=0;
+
+for(var x_szm=-R_szm; x_szm<=R_szm; x_szm++)
+{
+    for(var y_szm=-R_szm; y_szm<=R_szm; y_szm++)
+    {
+        if((x_szm*x_szm+y_szm*y_szm)<=R_szm*R_szm)
+        {
+            N_szm=N_szm+1;
+        }
+    }
+}
+
+document.write("R = "+R_szm+"<br>");
+document.write("N(R) = "+N_szm);
+
+</script>
+
+</div>
+
+</body>
+</html>
+
+</textarea>
+</body>
+</html>
