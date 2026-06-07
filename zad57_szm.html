@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="utf-8">
-<title>Zadanie 57</title>
+    <meta charset="utf-8">
+    <title>Zadanie 57</title>
 </head>
 <body>
 
 <script>
+    var numer_w_dzienniku = 4;
+    var koniec = numer_w_dzienniku + 15;
+    var licznik_linii = 0;
 
-var licznik_szm=0;
+    for (var i = numer_w_dzienniku; i <= koniec; i++) {
+        var pierw_2 = Math.sqrt(i);
+        var pierw_4 = Math.sqrt(pierw_2);
 
-for(var i_szm=26;i_szm<=41;i_szm++)
-{
- var pierw2_szm=Math.sqrt(i_szm);
- var pierw4_szm=Math.sqrt(pierw2_szm);
+        document.write("l=" + i + " &nbsp;&nbsp;&nbsp;&nbsp; pierw_2(" + i + ")=" + pierw_2.toFixed(2) + " &nbsp;&nbsp;&nbsp;&nbsp; pierw_4(" + i + ")=" + pierw_4.toFixed(2) + "<br>");
+        
+        licznik_linii++;
 
- document.write(
- "i="+i_szm+
- " pierw_2("+i_szm+")="+pierw2_szm.toFixed(2)+
- " pierw_4("+i_szm+")="+pierw4_szm.toFixed(2)+
- "<br>"
- );
-
- licznik_szm++;
-
- if(licznik_szm%3==0)
- {
-  confirm("Kliknij OK");
- }
-}
-
+        if (licznik_linii % 3 === 0 && i < koniec) {
+            var kontynuuj = confirm("Wyświetlono kolejne 3 linie. Czy chcesz kontynuować?");
+            if (!kontynuuj) {
+                break;
+            }
+        }
+    }
 </script>
 
 </body>
