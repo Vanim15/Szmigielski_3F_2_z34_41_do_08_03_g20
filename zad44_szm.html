@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="utf-8">
-<title>Zadanie 44</title>
+    <meta charset="utf-8">
+    <title>Zadanie 44</title>
 </head>
 <body>
 
 <script>
+    var koniec_petli_szm = 13;
+    var wielkosc_liter = 42;
 
-for(var i_szm=1;i_szm<=10;i_szm++)
-{
- if(i_szm%2==0)
- {
-  document.write("Szmigielski<br>");
- }
- else
- {
-  document.write("Filip<br>");
- }
-}
+    document.write("ilość wykonania pętli = " + koniec_petli_szm + "<br>");
+    document.write("wielkość liter = " + wielkosc_liter + "px<br><hr>");
 
+    document.write("<div style='font-size: " + wielkosc_liter + "px;'>");
+
+    for(var i_szm = 1; i_szm <= koniec_petli_szm; i_szm++)
+    {
+        if(i_szm % 2 !== 0)
+        {
+            document.write(i_szm + ". Szmigielski<br>");
+        }
+        else
+        {
+            document.write(i_szm + ". Filip<br>");
+        }
+    }
+
+    document.write("</div>");
 </script>
 
 </body>
