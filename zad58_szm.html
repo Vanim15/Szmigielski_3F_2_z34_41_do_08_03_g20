@@ -1,49 +1,36 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="utf-8">
-<title>Zadanie 58</title>
+    <meta charset="utf-8">
+    <title>Zadanie 58</title>
 </head>
 <body>
 
 <script>
+    var liczba1 = parseInt(prompt("Podaj pierwszą liczbę:"));
+    var liczba2 = parseInt(prompt("Podaj drugą liczbę:"));
 
-var a_szm=parseInt(prompt("Podaj pierwszą liczbę"));
-var b_szm=parseInt(prompt("Podaj drugą liczbę"));
-
-if(a_szm<b_szm)
-{
- document.write("<div style='color:green;font-size:40px;'>");
-
- for(var i_szm=a_szm+1;i_szm<b_szm;i_szm++)
- {
-  if(i_szm%2!=0)
-  {
-   document.write(i_szm+"<br>");
-  }
- }
-
- document.write("</div>");
-}
-else if(a_szm>b_szm)
-{
- document.write("<div style='color:blue;font-size:20px;'>");
-
- for(var i_szm=a_szm-1;i_szm>b_szm;i_szm--)
- {
-  if(i_szm%2!=0)
-  {
-   document.write(i_szm+"<br>");
-  }
- }
-
- document.write("</div>");
-}
-else
-{
- confirm("Podane liczby są równe - brak obliczeń");
-}
-
+    if (liczba1 === liczba2) {
+        confirm("Liczby są równe! Brak obliczeń.");
+    } 
+    else if (liczba1 < liczba2) {
+        document.write("<div style='color: green; font-size: 24px;'>");
+        for (var i = liczba1; i <= liczba2; i++) {
+            if (i % 2 !== 0) {
+                document.write(i + " ");
+            }
+        }
+        document.write("</div>");
+    } 
+    else {
+        document.write("<div style='color: blue; font-size: 12px;'>");
+        for (var i = liczba1; i >= liczba2; i--) {
+            if (i % 2 !== 0) {
+                document.write(i + " ");
+            }
+        }
+        document.write("</div>");
+    }
 </script>
 
 </body>
