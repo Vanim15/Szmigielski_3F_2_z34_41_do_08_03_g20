@@ -6,30 +6,24 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="utf-8">
-<title>Zadanie 56</title>
+    <meta charset="utf-8">
+    <title>Zadanie 56</title>
 </head>
 <body>
 
 <script>
+    for (var i = 0; i <= 39; i++) {
+        var w = (i * i) + i + 41;
+        
+        document.write("i=" + i + " &nbsp;&nbsp;&nbsp;&nbsp; w(" + i + ")=" + w + "<br>");
 
-var licznik_szm=0;
-
-for(var i_szm=0;i_szm<=39;i_szm++)
-{
- var w_szm=i_szm*i_szm+i_szm+41;
-
- document.write("i="+i_szm+
- " w("+i_szm+")="+w_szm+"<br>");
-
- licznik_szm++;
-
- if(licznik_szm%5==0)
- {
-  confirm("Kliknij OK");
- }
-}
-
+        if ((i + 1) % 5 === 0 && i < 39) {
+            var kontynuuj = confirm("Wyświetlono kolejne 5 linii. Czy chcesz kontynuować?");
+            if (!kontynuuj) {
+                break;
+            }
+        }
+    }
 </script>
 
 </body>
